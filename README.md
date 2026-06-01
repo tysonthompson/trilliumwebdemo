@@ -9,6 +9,7 @@ This is a static demo site for a home improvement business branded as **BrightVi
 ## Included files
 - `index.html` — homepage content
 - `styles.css` — responsive design and layout
+- `assets/` — generated logo and renovation example images
 
 ## Notes
 - No JavaScript is required for the demo.
