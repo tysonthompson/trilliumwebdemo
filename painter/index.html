@@ -3,16 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trillium Web Demo | Painters</title>
-  <meta name="description" content="Painter demo site placeholder for Trillium Web." />
+  <title>Trillium Web Demo | TrueTone Painting Co.</title>
+  <meta name="description" content="TrueTone Painting Co. demo site by Trillium Web, featuring residential interior, exterior, cabinet, and commercial painting services." />
   <link rel="stylesheet" href="../styles.css" />
 </head>
-<body class="trade-placeholder">
-  <main class="placeholder-shell">
-    <a class="back-link" href="../">All demos</a>
-    <p class="eyebrow">Painter Demo</p>
-    <h1>Painters</h1>
-    <p>More coming.</p>
-  </main>
+<body class="painter-site">
+  <div class="painter-shell">
+    <header class="painter-topbar">
+      <a class="back-link painter-back" href="../">All demos</a>
+      <nav class="painter-nav" aria-label="Painter site navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="painter-hero">
+        <div class="painter-hero-copy">
+          <p class="painter-eyebrow">Trillium Web Demo</p>
+          <h1>TrueTone Painting Co.</h1>
+          <p class="painter-lede">Clean prep, crisp lines, and color guidance for homes that need a brighter finish.</p>
+          <div class="painter-actions">
+            <a class="painter-btn primary" href="#contact">Book an estimate</a>
+            <a class="painter-btn secondary" href="#work">See projects</a>
+          </div>
+        </div>
+        <div class="painter-hero-media">
+          <img src="https://www.timminspainting.com/wp-content/uploads/2023/09/professional_painter_paints_interior_walls-825x450.webp" alt="Professional painter rolling fresh paint onto an interior wall" />
+          <div class="painter-stat">
+            <strong>4.9</strong>
+            <span>Average homeowner rating</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="painter-section">
+        <div class="painter-section-header">
+          <p class="painter-eyebrow">What we paint</p>
+          <h2>Interior and exterior finishes handled with care.</h2>
+        </div>
+        <div class="painter-service-grid">
+          <article>
+            <span>01</span>
+            <h3>Interior Painting</h3>
+            <p>Walls, ceilings, trim, doors, and accent rooms with careful masking, repairs, and low-odor products.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Exterior Painting</h3>
+            <p>Weather-ready siding, stucco, brick, shutters, decks, and front doors prepared for a lasting finish.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Cabinets &amp; Millwork</h3>
+            <p>Durable sprayed finishes for kitchens, vanities, shelving, fireplace surrounds, and built-ins.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Commercial Refresh</h3>
+            <p>Fast, tidy repainting for offices, storefronts, clinics, rental units, and property managers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="painter-section painter-work">
+        <div class="painter-section-header">
+          <p class="painter-eyebrow">Recent work</p>
+          <h2>Fresh color changes with a polished finish.</h2>
+        </div>
+        <div class="painter-gallery">
+          <article class="large">
+            <img src="https://getfreshpaint.biz/Portals/0/GravityImages/366/ProportionalFixedWidth/103114954_3155446564517440_2312414882189044832_nx400x400.jpg" alt="Before and after exterior house painting transformation" />
+            <div>
+              <h3>Exterior Siding Refresh</h3>
+              <p>Updated siding color, crisp white trim, and a cleaner curb appeal package.</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://www.timminspainting.com/wp-content/uploads/2023/09/living_room_with_ladder_prepped_for_painting-1024x683.webp" alt="Living room prepared for professional painting with ladder and supplies" />
+            <div>
+              <h3>Living Room Repaint</h3>
+              <p>Protected floors, repaired walls, and a soft neutral finish.</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://getfreshpaint.biz/Portals/0/GravityImages/426/ProportionalFixedWidth/image1.jpegx400x400.jpg" alt="Before and after fireplace painted white" />
+            <div>
+              <h3>Fireplace Makeover</h3>
+              <p>Brick transformed into a bright focal point for the room.</p>
+            </div>
+          </article>
+          <article>
+            <img src="https://getfreshpaint.biz/Portals/0/GravityImages/368/ProportionalFixedWidth/17862579_1423228514405929_133378590759892122_nx400x400.jpg" alt="Bathroom vanity paint makeover with brighter wall color" />
+            <div>
+              <h3>Bath Vanity Finish</h3>
+              <p>A smaller update with an immediate lift in the space.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="painter-color-band">
+        <div>
+          <p class="painter-eyebrow">Color confidence</p>
+          <h2>Sample boards, lighting checks, and finishes that match the way you live.</h2>
+        </div>
+        <div class="swatches" aria-label="Paint color palette">
+          <span class="swatch clay"></span>
+          <span class="swatch sage"></span>
+          <span class="swatch sky"></span>
+          <span class="swatch cream"></span>
+        </div>
+      </section>
+
+      <section id="process" class="painter-section">
+        <div class="painter-section-header">
+          <p class="painter-eyebrow">How it works</p>
+          <h2>A smooth project from quote to final walkthrough.</h2>
+        </div>
+        <div class="painter-steps">
+          <div>
+            <strong>Measure</strong>
+            <p>We review surfaces, repairs, timing, and product needs.</p>
+          </div>
+          <div>
+            <strong>Prepare</strong>
+            <p>Rooms are protected, gaps are caulked, and walls are patched.</p>
+          </div>
+          <div>
+            <strong>Paint</strong>
+            <p>Clean coats, sharp edges, steady communication, and tidy crews.</p>
+          </div>
+          <div>
+            <strong>Review</strong>
+            <p>Final touchups and a walkthrough before the job is complete.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="painter-contact">
+        <div>
+          <p class="painter-eyebrow">Ready for a refresh?</p>
+          <h2>Schedule a free painting estimate.</h2>
+          <p>Tell us about the room, exterior, or property you want painted and TrueTone will prepare a clear quote.</p>
+        </div>
+        <div class="painter-contact-card">
+          <span>Phone</span>
+          <strong>(555) 018-9044</strong>
+          <span>Email</span>
+          <strong>hello@truetonepaint.com</strong>
+          <span>Service area</span>
+          <strong>Greater Metro Region</strong>
+        </div>
+      </section>
+    </main>
+
+    <footer class="painter-footer">
+      <p>Trillium Web Demo - TrueTone Painting Co. | Static trade demo site.</p>
+    </footer>
+  </div>
 </body>
 </html>

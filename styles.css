@@ -87,6 +87,335 @@ body {
   color: var(--accent);
 }
 
+.painter-site {
+  color-scheme: light;
+  --paint-bg: #fbf8f2;
+  --paint-text: #22313b;
+  --paint-muted: #66747d;
+  --paint-surface: #ffffff;
+  --paint-line: #e9ded1;
+  --paint-accent: #2f8d8a;
+  --paint-coral: #e1785c;
+  --paint-yellow: #f3c453;
+  --paint-shadow: 0 24px 70px rgba(88, 71, 49, 0.13);
+  background:
+    linear-gradient(135deg, rgba(47, 141, 138, 0.12), transparent 36%),
+    linear-gradient(180deg, #fffdf7 0%, var(--paint-bg) 46%, #f4efe7 100%);
+  color: var(--paint-text);
+}
+
+.painter-site .back-link,
+.painter-site a {
+  color: inherit;
+}
+
+.painter-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 26px 0 42px;
+}
+
+.painter-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+}
+
+.painter-back {
+  margin: 0;
+  color: var(--paint-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.painter-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.painter-nav a {
+  color: var(--paint-muted);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.painter-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: 34px;
+  align-items: center;
+  padding: 22px 0 58px;
+}
+
+.painter-eyebrow {
+  margin: 0 0 12px;
+  color: var(--paint-accent);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.painter-hero h1 {
+  max-width: 620px;
+  font-size: clamp(3.1rem, 8vw, 6.8rem);
+  line-height: 0.9;
+  margin-bottom: 24px;
+}
+
+.painter-lede {
+  max-width: 560px;
+  margin: 0 0 28px;
+  color: var(--paint-muted);
+  font-size: 1.24rem;
+}
+
+.painter-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.painter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.painter-btn.primary {
+  background: var(--paint-accent);
+  color: #ffffff;
+}
+
+.painter-btn.secondary {
+  background: transparent;
+  color: var(--paint-text);
+  border: 1px solid var(--paint-line);
+}
+
+.painter-hero-media {
+  position: relative;
+}
+
+.painter-hero-media img {
+  width: 100%;
+  min-height: 520px;
+  max-height: 640px;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--paint-shadow);
+}
+
+.painter-stat {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: min(220px, calc(100% - 36px));
+  padding: 18px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.93);
+  border: 1px solid var(--paint-line);
+}
+
+.painter-stat strong {
+  display: block;
+  color: var(--paint-coral);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.painter-stat span {
+  color: var(--paint-muted);
+  font-weight: 700;
+}
+
+.painter-section {
+  padding: 58px 0;
+}
+
+.painter-section-header {
+  max-width: 730px;
+  margin-bottom: 28px;
+}
+
+.painter-section-header h2,
+.painter-color-band h2,
+.painter-contact h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.painter-service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.painter-service-grid article,
+.painter-gallery article,
+.painter-steps div,
+.painter-contact-card {
+  background: var(--paint-surface);
+  border: 1px solid var(--paint-line);
+  border-radius: 8px;
+  box-shadow: var(--paint-shadow);
+}
+
+.painter-service-grid article {
+  padding: 24px;
+}
+
+.painter-service-grid span {
+  color: var(--paint-coral);
+  font-weight: 900;
+}
+
+.painter-service-grid h3,
+.painter-gallery h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.painter-service-grid p,
+.painter-gallery p,
+.painter-steps p,
+.painter-contact p,
+.painter-footer {
+  color: var(--paint-muted);
+}
+
+.painter-gallery {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.painter-gallery article {
+  overflow: hidden;
+}
+
+.painter-gallery article.large {
+  grid-row: span 3;
+}
+
+.painter-gallery img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+}
+
+.painter-gallery article.large img {
+  height: 620px;
+}
+
+.painter-gallery div {
+  padding: 20px;
+}
+
+.painter-color-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 24px;
+  margin: 38px 0 20px;
+  padding: 34px;
+  border-radius: 8px;
+  background: #eef7f6;
+  border: 1px solid #d6eae8;
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(2, 78px);
+  gap: 12px;
+}
+
+.swatch {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  border: 8px solid #ffffff;
+  box-shadow: 0 14px 34px rgba(46, 61, 66, 0.16);
+}
+
+.swatch.clay {
+  background: #c86952;
+}
+
+.swatch.sage {
+  background: #9daf91;
+}
+
+.swatch.sky {
+  background: #86b9c9;
+}
+
+.swatch.cream {
+  background: #f3dfbd;
+}
+
+.painter-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.painter-steps div {
+  padding: 22px;
+}
+
+.painter-steps strong {
+  color: var(--paint-coral);
+  font-size: 1.15rem;
+}
+
+.painter-contact {
+  display: grid;
+  grid-template-columns: 1.1fr 0.8fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 44px;
+  padding: 34px;
+  border-radius: 8px;
+  background: #fff3df;
+  border: 1px solid #f0ddba;
+}
+
+.painter-contact-card {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  box-shadow: none;
+}
+
+.painter-contact-card span {
+  color: var(--paint-accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.painter-contact-card strong {
+  color: var(--paint-text);
+  font-size: 1.08rem;
+}
+
+.painter-footer {
+  padding-top: 26px;
+  text-align: center;
+}
+
 .page-shell {
   max-width: 1180px;
   margin: 0 auto;
@@ -400,6 +729,21 @@ h1 {
   .contact-content {
     grid-template-columns: 1fr;
   }
+  .painter-hero,
+  .painter-gallery,
+  .painter-color-band,
+  .painter-contact {
+    grid-template-columns: 1fr;
+  }
+  .painter-gallery article.large {
+    grid-row: auto;
+  }
+  .painter-gallery article.large img {
+    height: 360px;
+  }
+  .swatches {
+    grid-template-columns: repeat(4, minmax(54px, 78px));
+  }
 }
 
 @media (max-width: 640px) {
@@ -424,5 +768,44 @@ h1 {
   .project-card h4,
   .project-card p {
     padding-inline: 22px;
+  }
+  .painter-shell {
+    width: min(100% - 28px, 1180px);
+    padding-top: 20px;
+  }
+  .painter-topbar {
+    align-items: flex-start;
+  }
+  .painter-nav {
+    gap: 12px;
+  }
+  .painter-hero {
+    padding-bottom: 34px;
+  }
+  .painter-hero h1 {
+    font-size: 3rem;
+  }
+  .painter-lede {
+    font-size: 1.06rem;
+  }
+  .painter-btn {
+    width: 100%;
+  }
+  .painter-hero-media img {
+    min-height: 340px;
+  }
+  .painter-section {
+    padding: 38px 0;
+  }
+  .painter-gallery img,
+  .painter-gallery article.large img {
+    height: 260px;
+  }
+  .painter-color-band,
+  .painter-contact {
+    padding: 24px;
+  }
+  .swatches {
+    grid-template-columns: repeat(2, minmax(64px, 1fr));
   }
 }
